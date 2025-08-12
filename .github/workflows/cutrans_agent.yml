@@ -1,0 +1,19 @@
+name: CU Trans Agent Workflow
+
+on:
+  workflow_dispatch:
+    # inputs:
+    #   env:
+    #     description: "Target environment"
+    #     required: true
+    #     type: choice
+    #     options: [staging, prod]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  call-private:
+    # Call the reusable workflow that lives in the PRIVATE repo
+    uses: jeffreyzhong/FreightQuotationAgent/.github/workflows/agent_cron.yml@master
