@@ -16,4 +16,4 @@ permissions:
 jobs:
   call-private:
     # Call the reusable workflow that lives in the PRIVATE repo
-    uses: jeffreyzhong/FreightQuotationAgent/.github/workflows/agent_cron.yml@master
+    uses: jeffreyzhong/FreightQuotationAgent/.github/workflows/agent_cron.yml@main
